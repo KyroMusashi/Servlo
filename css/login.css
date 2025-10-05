@@ -1,0 +1,80 @@
+/* ====== Layout principal ====== */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #fff0f5;
+  margin: 0;
+  padding: 0;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== Caixa de login ====== */
+.login-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(212, 77, 77, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.login-box h2 {
+  color: #d44d4d;
+  margin-bottom: 15px;
+}
+
+/* ====== Formulário ====== */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #d44d4d;
+  font-weight: bold;
+}
+
+input {
+  border: 2px solid #d44d4d;
+  padding: 10px 0;
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  text-align: center;   /* centraliza o texto digitado */
+  display: block;       /* garante que o input seja tratado como bloco */
+  margin-left: auto;    /* centraliza o campo */
+  margin-right: auto;   /* centraliza o campo */
+}
+
+/* ====== Botão ====== */
+button {
+  background: #d44d4d;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #b83d3d;
+}
+
+/* ====== Rodapé ====== */
+footer {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+footer a {
+  margin: 0 8px;
+  color: #d44d4d;
+  text-decoration: none;
+}
