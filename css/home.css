@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fonte bonitinha */
+  background-color: #fff0f5; /* A cor do body. O rosa */
+  margin: 0;
+  padding: 0;
+
+  height: 100vh; /* Faz com que o Body ocupe a tela inteira. Não mexe. */
+  display: flex;
+  /* justify-content: space-around; /* centraliza horizontalmente */
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* MENU. NÃO MECHA */
+.menu-box {
+  transition: 800ms;
+  background: #fff;
+  padding: 0rem;
+  margin: 2rem auto;        /* centraliza e dá espaço em cima/baixo */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(212, 77, 77, 0.2);
+  text-align: center;
+
+  width: 70%;              /* largura controlada */
+  max-width: 800px;       /* não passa disso em telas grandes */
+  max-height: 70px;
+
+  position: fixed;
+  top: 10px;
+}
+
+
+.menu-box:hover {
+  transition: 800ms;
+  background: #fff;
+  padding: 0rem;
+  margin: 2rem auto;        /* centraliza e dá espaço em cima/baixo */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(212, 77, 77, 0.2);
+  text-align: center;
+
+  width: 90%;              /* largura controlada */
+  max-width: 800px;       /* não passa disso em telas grandes */
+  max-height: 70px;
+}
+
+
+.items {
+  /* Display */
+  padding: 10px;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  /* Estilo */
+  list-style: none;
+  color: #444444;
+}
+
+
+a {
+  text-decoration: none;
+  color: #444444;
+}
+/* =============== */
+
+/* Beleza. Agora o vamos para
+ a caixa de conteúdo. */
+
+#header {
+  font-family: sans-serif;
+  color: #1a1a1a;
+
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header #title {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 130px;
+  margin: 0;
+  padding: 0rem;
+
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#subtitle {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.scroll-down {
+  font-size: 2rem;     /* aumenta o tamanho */
+  color: #000;         /* cor da seta */
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;        /* fica no fundo da seção */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+}
+
+/* Main */
+#main {
+  background-color: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 50px; 
+  border-bottom-right-radius: 50px; 
+}
+
+h1 {
+  margin: 0px 40px;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  font-size: 50px;
+}
+
+h3 {
+  margin: 0px 40px;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0px;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content {
+  max-width: 700px;
+  height: 45%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.content-buttons {
+  max-width: 700px;
+  height: 20%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#footer {
+  background-color: #fff0f5;
+
+  min-height: 30vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+}
