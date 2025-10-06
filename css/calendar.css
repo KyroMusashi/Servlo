@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #fff0f5;
+}
+
 /* Header */
 header {
     padding: 1rem;
@@ -28,18 +32,50 @@ a {
 
 }
 
+
+/* Título */
 #título {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 80px;
 
+    text-align: start;
+
     /*position: absolute;
     bottom: 40%;*/
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
 }
+
+#subtitulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: end;
+
+    position: absolute;
+    right: 10px;
+    bottom: 40%;
+    transform: translateY(-50%);
+}
+
+/* Quando a tela estiver em modo paisagem */
+@media (orientation: landscape) {
+    #título {
+        position: absolute;
+        top: 40%;
+        right: 55%;
+        transform: translateY(-50%);
+        /* Ou qualquer outra posição que você quiser */
+    }
+    #subtitulo {
+        position: absolute;
+        bottom: 40%;
+        right: 20%;
+        transform: translateY(-50%);
+    }
+}
+
 
 .scroll-down {
   font-size: 2rem;     /* aumenta o tamanho */
@@ -72,6 +108,9 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    border-bottom-left-radius: 50px; 
+    border-bottom-right-radius: 50px; 
 }
 
 /*
@@ -129,4 +168,22 @@ a {
 
     border: solid 1px #fff0f5;
 }
+
 /* ==== */
+
+
+/* Footer */
+footer {
+  background-color: #fff0f5;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  min-height: 30vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+}
