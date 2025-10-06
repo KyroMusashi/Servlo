@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    padding: 1rem;
+
+    height: 100vh;
+    min-width: 360px;
+
+    background-color: #fff0f5;
+    color: #1a1a1a;
+}
+
+a {
+    font-family: "Cantarell", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+
+    color: #1a1a1a;
+
+}
+
+#título {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+
+    /*position: absolute;
+    bottom: 40%;*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-down {
+  font-size: 2rem;     /* aumenta o tamanho */
+  color: #000;         /* cor da seta */
+  text-decoration: none;
+  bottom: 20px;        /* fica no fundo da seção */
+  /*left: 320px;
+  transform: translateX(-50%);*/
+  padding: 10px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* ====== */
+
+
+/* Main */
+#main {
+    min-height: 100vh;
+    min-width: 360px;
+    padding: 1rem;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: #fff0f5;
+
+    background-color: #1a1a1a;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*
+.dia {
+    transition: 500ms;
+
+    min-height: 300px;
+    width: 400px;
+    padding: 20px;
+    margin: 1rem;
+
+    background-color: #151515;
+
+    text-align: start;
+
+    border-radius: 24px;
+    border: solid 1px #4a4a4a;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+*/
+
+.dia {
+    transition: 500ms;
+    min-height: 300px;
+    width: 400px;
+    padding: 20px;
+    margin: 1rem;
+    background-color: #151515;
+    border-radius: 24px;
+    border: solid 1px #4a4a4a;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* conteúdo começa no topo */
+    align-items: flex-start; /* texto alinhado à esquerda */
+    gap: 1rem; /* espaçamento entre h1 e p */
+}
+
+.dia h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.dia p {
+    flex: 1; /* ocupa o espaço restante */
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.dia:hover {
+    transition: 500ms;
+
+    border: solid 1px #fff0f5;
+}
+/* ==== */

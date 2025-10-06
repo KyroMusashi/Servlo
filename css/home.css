@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,57 +23,6 @@ html {
 }
 
 
-/* MENU. NÃO MECHA */
-.menu-box {
-  transition: 800ms;
-  background: #fff;
-  padding: 0rem;
-  margin: 2rem auto;        /* centraliza e dá espaço em cima/baixo */
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(212, 77, 77, 0.2);
-  text-align: center;
-
-  width: 70%;              /* largura controlada */
-  max-width: 800px;       /* não passa disso em telas grandes */
-  max-height: 70px;
-
-  position: fixed;
-  top: 10px;
-}
-
-
-.menu-box:hover {
-  transition: 800ms;
-  background: #fff;
-  padding: 0rem;
-  margin: 2rem auto;        /* centraliza e dá espaço em cima/baixo */
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(212, 77, 77, 0.2);
-  text-align: center;
-
-  width: 90%;              /* largura controlada */
-  max-width: 800px;       /* não passa disso em telas grandes */
-  max-height: 70px;
-}
-
-
-.items {
-  /* Display */
-  padding: 10px;
-  margin: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-
-  /* Estilo */
-  list-style: none;
-  color: #444444;
-}
-
-
-a {
-  text-decoration: none;
-  color: #444444;
-}
 /* =============== */
 
 /* Beleza. Agora o vamos para
@@ -83,9 +33,9 @@ a {
   color: #1a1a1a;
 
   min-height: 100vh;
-  display:flex;
+  /*display:flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 
 #header #title {
@@ -94,13 +44,11 @@ a {
   font-style: normal;
 
   font-size: 130px;
-  margin: 0;
-  padding: 0rem;
 
-  position: absolute;
-  top: 46%;
+  /*position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
 }
 
 #subtitle {
@@ -108,10 +56,27 @@ a {
   font-family: sans-serif;
 }
 
-.logo {
+#logo {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  
+  
+
+  padding: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
+}
+
+#logo #subtitle {
+  margin: 0;
 }
 
 .scroll-down {
@@ -122,6 +87,8 @@ a {
   bottom: 20px;        /* fica no fundo da seção */
   /*left: 320px;
   transform: translateX(-50%);*/
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px;
 }
 
@@ -132,6 +99,8 @@ a {
   min-height: 100vh;
   width: 100%;
 
+  /*padding: 1rem;*/
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,30 +108,18 @@ a {
   border-bottom-right-radius: 50px; 
 }
 
-h1 {
-  margin: 0px 40px;
+#main h1 {
+  /*margin: 0px 40px;*/
   margin-left: 20px;
   margin-right: 0px;
-  margin-top: 0px;
-  padding: 0px;
+  margin-top: 0px;*/
   font-size: 50px;
 }
 
-a {
-  margin: 0px 40px;
-  margin-left: 20px;
-  margin-right: 0px;
-  margin-top: 0px;
-  padding: 20px;
-
-  color: #e6cee6;
-}
-
-p {
+#main p {
   margin: 0px;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 0px;
   font-family: "Cantarell", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -180,13 +137,24 @@ p {
   
 }
 
-.content-buttons {
-  
-  width: 150px;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/*.button {
+  color: #e6cee6;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 2rem;
+}*/
+
+.button {
+    color: #e6cee6;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Reduz o padding vertical */
+    margin: 1rem; /* Reduz a margem externa */
+    display: inline-block; /* Melhor para elementos de link */
+    /*border: 1px solid #e6cee6; /* Opcional: para melhor visualização */
+    border-radius: 4px; /* Opcional: cantos arredondados */
+
+    display: inline-block; /* Impede que ocupe toda a largura */
+    width: fit-content; /* Ocupa apenas o espaço necessário */
 }
 
 #footer {
