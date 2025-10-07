@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1a;
+}
+
+/* 
+
+Vermelho: #FF746C
+Laranja: #FFC067
+Amarelo: #FFEE8C
+Verde: #50C878
+Verde Abacate: #568203
+
+Fundo: #1a1a1a
+Principal: #fff0f5
+Texto: #fff0f5
+
+*/
+
+/* Header */
+header {
+    /* Tamanho */
+    min-height: 50vh;
+    padding: 1rem;
+
+    /* Estilo */
+    color: #1a1a1a;
+    background-color: #fff0f5;
+
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+header a {
+    font-family: "Cantarell", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+
+    color: #1a1a1a;
+}
+
+header #title {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translateX(-40%);
+}
+/* ====== */
+
+
+/* Main */
+main {
+    min-height: 100vh;
+    padding: 2rem;
+
+    background-color: #1a1a1a;
+    color: #fff0f5;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.emoção1 {
+    max-height: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 400px;
+
+    background-color: #FF746C;
+
+    border-radius: 24px;
+
+    padding: 10px;
+    margin-bottom: 2rem;
+    margin: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+.emoção2 {
+    max-height: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 400px;
+
+    overflow: hidden;
+
+    background-color: #FFC067;
+
+    border-radius: 24px;
+
+    padding: 10px;
+    margin-bottom: 2rem;
+    margin: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+.emoção3 {
+    max-height: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 400px;
+
+    background-color: #DBCC79;
+
+    border-radius: 24px;
+
+    padding: 10px;
+    margin-bottom: 2rem;
+    margin: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+.emoção4 {
+    max-height: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 400px;
+
+    background-color: #50C878;
+
+    border-radius: 24px;
+
+    padding: 10px;
+    margin-bottom: 2rem;
+    margin: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+.emoção5 {
+    max-height: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 400px;
+
+    background-color: #50C850;
+
+    border-radius: 24px;
+
+    padding: 10px;
+    margin-bottom: 2rem;
+    margin: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px
+}
+
+img {
+    margin-right: 2rem;
+
+
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+/* ==== */
